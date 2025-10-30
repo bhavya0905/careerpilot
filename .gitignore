@@ -1,0 +1,80 @@
+# ======================================
+# 🌐 FRONTEND (React + Vite)
+# ======================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.production.local
+frontend/.env.test.local
+
+# Vite cache
+frontend/.vite/
+frontend/.vscode/
+frontend/.DS_Store
+
+# ======================================
+# 🐍 BACKEND (Flask + Python)
+# ======================================
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/instance/
+backend/*.db
+backend/*.db-journal
+backend/*.pid
+backend/*.sqlite3
+
+# Virtual environments
+backend/venv/
+backend/env/
+backend/.venv/
+backend/ENV/
+backend/.env/
+backend/.env.bak/
+
+# Flask / Python cache & logs
+backend/*.log
+backend/.cache/
+backend/.coverage
+backend/.pytest_cache/
+backend/*.bak
+backend/*.tmp
+backend/*.swp
+
+# ======================================
+# 🧱 GENERAL / SYSTEM / IDE FILES
+# ======================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+Thumbs.db
+.DS_Store
+
+# ======================================
+# 📦 DEPLOYMENT / TEST / BUILD
+# ======================================
+*.orig
+*.rej
+*~
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+celerybeat-schedule
