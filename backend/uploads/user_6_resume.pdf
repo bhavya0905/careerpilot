@@ -1,0 +1,14 @@
+    Enterprise_Customers e
+ON
+    s.customer_id = e.customer_id
+WHERE
+    DATEDIFF(s.start_date, LAG(s.end_date) OVER (PARTITION BY s.customer_id ORDER BY s.start_date)) > 45;
+
+
+Expected Output Example:
+
+customer_id | company_name   | gap_in_days | previous_end_date | next_start_date
+-------------|----------------|-------------|-------------------|----------------
+2003         | AlphaSoft Inc. | 60          | 2023-01-01        | 2023-03-02
+2007         | BetaCorp Ltd.  | 92          | 2022-05-10        | 2022-08-10
+
