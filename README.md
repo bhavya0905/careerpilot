@@ -41,7 +41,7 @@ It helps users search jobs, learn skills, and manage resumes all in one platform
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone the repository
+### Clone the repository
 ```bash
 git clone https://github.com/bhavya0905/careerpilot.git
 cd careerpilot
